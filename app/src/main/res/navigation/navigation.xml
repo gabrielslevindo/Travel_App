@@ -6,6 +6,21 @@
     app:startDestination="@id/onBoardingFirstScreen">
 
     <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.travelapp.view.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_onBoardingFirstScreen"
+            app:destination="@id/onBoardingFirstScreen" />
+        <action
+            android:id="@+id/action_loginFragment_to_onBoardingSecondScreen"
+            app:destination="@id/onBoardingSecondScreen" />
+        <action
+            android:id="@+id/action_loginFragment_to_onBoardingThirdScreen"
+            app:destination="@id/onBoardingThirdScreen" />
+    </fragment>
+
+    <fragment
         android:id="@+id/onBoardingFirstScreen"
         android:name="com.example.travelapp.view.onBoarding.OnBoardingFirstScreen"
         android:label="OnBoardingFirstScreen"
@@ -28,4 +43,5 @@
         android:name="com.example.travelapp.view.onBoarding.OnBoardingThirdScreen"
         android:label="OnBoardingThirdScreen"
         tools:layout="@layout/on_boarding_third_screen"/>
+
 </navigation>

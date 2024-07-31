@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import androidx.navigation.compose.rememberNavController
-import com.example.travelapp.presentation.ui.theme.TravelAppTheme
+//import com.example.travelapp.presentation.ui.theme.TravelAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,9 +20,9 @@ class LoginFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
-                TravelAppTheme {
-                    ComposeFragmentContent()
-                }
+//                TravelAppTheme {
+//                    ComposeFragmentContent()
+//                }
             }
         }
     }
